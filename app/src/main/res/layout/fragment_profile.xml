@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="vertical">-->
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:layout_margin="@dimen/_10sdp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="@dimen/_1sdp"
+                app:cardElevation="1dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--<TextView-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:layout_marginStart="@dimen/_10sdp"-->
+                        <!--android:textSize="@dimen/_15sdp"-->
+                        <!--android:textColor="@color/black"-->
+                        <!--android:text="Profile"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content" />-->
+
+                    <!--<View-->
+                        <!--android:layout_marginTop="@dimen/_1sdp"-->
+                        <!--android:background="@color/gray"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="1dp"/>-->
+
+                    <!--<LinearLayout-->
+
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:gravity="center"-->
+                        <!--android:orientation="vertical">-->
+
+                        <RelativeLayout
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_90sdp">
+
+                            <com.mealapp.utility.CircularImageView
+                                android:layout_centerInParent="true"
+                                android:id="@+id/img_profile_pic_profile_frg"
+                                android:layout_width="@dimen/_90sdp"
+                                android:layout_height="@dimen/_90sdp"
+                                android:layout_gravity="center"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/bg_login"
+                                app:border_color="@android:color/white"
+                                app:border_width="0.5dp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:weightSum="1">
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.70"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.2"
+                                    android:orientation="horizontal">
+
+                                    <View
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.55"/>
+
+                                    <ImageView
+                                        android:id="@+id/imgView_changeProfile"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.07"
+                                        android:src="@drawable/ic_camera"
+                                        android:layout_gravity="bottom"/>
+
+                                    <View
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.37"/>
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.10" />
+
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_50sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:src="@drawable/user"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp" />
+
+                        <EditText
+                            android:id="@+id/edt_profile_first_name"
+                            android:textSize="@dimen/_12ssp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:hint="First Name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:src="@drawable/user"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp" />
+
+                        <EditText
+                            android:id="@+id/edt_profile_last_name"
+                            android:textSize="@dimen/_12ssp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:hint="Last Name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:src="@drawable/email"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp" />
+
+                        <EditText
+                            android:id="@+id/edt_profile_email"
+                            android:textSize="@dimen/_12ssp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:hint="Email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+
+
+
+
+                    <RelativeLayout
+                        android:layout_marginTop="@dimen/_30sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/btn_update_user"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:textSize="@dimen/_15sdp"
+                            android:textColor="@color/white"
+                            android:background="@drawable/rounded_curv_orange"
+                            android:gravity="center"
+                            android:text="Update"
+                            android:layout_width="@dimen/_80sdp"
+                            android:layout_height="@dimen/_30sdp" />
+
+                        <TextView
+                            android:id="@+id/btn_change_password"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_alignParentRight="true"
+                            android:textSize="@dimen/_15sdp"
+                            android:textColor="@color/white"
+                            android:background="@drawable/rounded_curv_orange"
+                            android:gravity="center"
+                            android:text="Change Password"
+                            android:layout_width="@dimen/_135sdp"
+                            android:layout_height="@dimen/_30sdp" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_20sdp"
+                        android:id="@+id/btn_my_address"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:textSize="@dimen/_15sdp"
+                        android:textColor="@color/white"
+                        android:background="@drawable/rounded_curv_orange"
+                        android:gravity="center"
+                        android:text="My Address"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+    </ScrollView>
+</layout>

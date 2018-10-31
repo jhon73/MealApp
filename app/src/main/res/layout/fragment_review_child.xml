@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.mealapp.utility.CircularImageView
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_login" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_1sdp"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/txt_row_review_child_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dennish Harper"
+            android:textSize="@dimen/_14ssp" />
+
+        <TextView
+            android:id="@+id/txt_time_child_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_row_review_child_username"
+            android:layout_marginTop="@dimen/_1sdp"
+            android:text="2m ago"
+            android:textSize="@dimen/_10sdp" />
+
+        <ImageView
+            android:src="@drawable/ic_delete"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_alignParentRight="true"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp" />
+
+        <!--<RatingBar-->
+            <!--android:layout_marginTop="@dimen/_3sdp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:id="@+id/ratingbar_user"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:stepSize="0.5"-->
+            <!--android:numStars="5"-->
+            <!--android:rating="4.5"-->
+            <!--android:layout_gravity="start"-->
+            <!--android:theme="@style/RatingBar"-->
+            <!--style="@style/Widget.AppCompat.RatingBar.Small"/>-->
+
+        <TextView
+            android:textSize="@dimen/_14sdp"
+            android:text="is simple dummy text of the printing industry typetest."
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_below="@+id/txt_time_child_rating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</LinearLayout>
+</layout>

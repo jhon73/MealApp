@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--<TextView-->
+            <!--android:textColor="@color/black"-->
+            <!--android:layout_marginTop="@dimen/_10sdp"-->
+            <!--android:gravity="center"-->
+            <!--android:text="My Address"-->
+            <!--android:textSize="@dimen/_16sdp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content" />-->
+
+            <!--<EditText-->
+            <!--android:layout_marginTop="@dimen/_20sdp"-->
+            <!--android:layout_marginStart="@dimen/_10sdp"-->
+            <!--android:layout_marginEnd="@dimen/_10sdp"-->
+            <!--android:paddingStart="@dimen/_5sdp"-->
+            <!--android:background="@drawable/square_gray"-->
+            <!--android:hint="Enter address"-->
+            <!--android:singleLine="true"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/_30sdp" />-->
+
+            <com.seatgeek.placesautocomplete.PlacesAutocompleteTextView
+                android:hint="Enter Address"
+                android:id="@+id/places_autocomplete"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/square_gray"
+                android:paddingStart="@dimen/_5sdp"
+                app:pacv_historyFile="@null"
+                app:pacv_resultType="establishment"
+                app:pacv_clearEnabled="true"
+                app:pacv_googleMapsApiKey="AIzaSyC7DWRzgniUU4zKG6bTZ-rh8Hevlm7jVEY" />
+
+
+            <EditText
+                android:id="@+id/edt_house_no"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/square_gray"
+                android:hint="House Number"
+                android:paddingStart="@dimen/_5sdp"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/edt_landmark"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/square_gray"
+                android:hint="Landmark"
+                android:paddingStart="@dimen/_5sdp"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/btn_save_address"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:background="@drawable/rounded_orange"
+            android:gravity="center"
+            android:text="SAVE"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sdp" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/btn_delete_address"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:background="@drawable/rounded_orange"
+            android:gravity="center"
+            android:text="DELETE"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sdp" />
+        </LinearLayout>
+
+        <com.victor.loading.rotate.RotateLoading
+            android:id="@+id/rotateloading"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:loading_width="5dp"
+            app:loading_color="@color/orange"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</layout>

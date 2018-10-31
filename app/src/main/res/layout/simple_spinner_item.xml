@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:weightSum="1"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:id="@+id/countryName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.78"
+        android:layout_margin="10dp"
+        android:textColor="@color/colorPrimary"
+        android:text="Pizza"
+        android:layout_gravity="center"
+        style="@style/TextAppearance.AppCompat.Medium"/>
+
+    <TextView
+        android:id="@+id/countrCode"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.155"
+        android:textColor="@android:color/darker_gray"
+        android:gravity="right|center"
+        android:text=""
+        style="@style/TextAppearance.AppCompat.Small"/>
+</LinearLayout>

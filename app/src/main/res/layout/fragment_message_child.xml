@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    android:orientation="vertical"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <com.mealapp.utility.CircularImageView
+        android:id="@+id/img_fr_msg_child"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_login" />
+
+    <TextView
+        android:layout_toRightOf="@+id/img_fr_msg_child"
+        android:id="@+id/txt_fr_msg_child_username"
+        android:textColor="@color/red_message"
+        android:textSize="@dimen/_13sdp"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:text="Nathanail Barker"
+        android:layout_width="@dimen/_140sdp"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.CardView
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/_2sdp"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true">
+    <TextView
+        android:textSize="@dimen/_12sdp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="Select all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="@dimen/_10sdp"
+        android:id="@+id/fr_msg_child_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>
+</layout>
